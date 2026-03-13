@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-Regular.woff2') format('woff2');
+}
+
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+    font-family: 'Satoshi', sans-serif;
+}
+main{
+    /* margin:10px; */
+    width:100%;
+    height:100%;
+    background-color:white;
+    display:flexbox;
+    flex-direction: column;
+    gap:10px;
+}
+header{
+    width:100%;
+    height:20%;
+}
+.head{
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-areas:"a1 a2 a3"
+    /* background-color:pink; */
+}
+.a1{
+    grid-area:a1;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    padding-left:5vmax;
+    padding-right:5vmax;
+    font-size:2rem;
+    font-weight:600;
+}
+.a2{
+    grid-area:a2;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:4vmax;
+}
+.a3{
+    grid-area:a3;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding-right:4vmax;
+    padding-left:5vmax;
+    gap:3vmax;
+}
+.a2:hover{
+    cursor:pointer;
+}
+#login{
+    border:none;
+    background-color: transparent;
+}
+#talk{
+    padding:10px;
+    border:none;
+    background-color:black;
+    color:white;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    border-radius:50px;
+}
+#arr{
+    background-color:rgb(58, 118, 168);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    color:white;
+}
+#login:hover{
+    cursor:pointer;
+}
+#talk:hover{
+    cursor:pointer;
+}
+section{
+    width:100%;
+    height: 80%;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    background-color: cadetblue;
+}
+.left{
+    width:50%;
+    height:100%;
+}
+.right{
+    width:50%;
+    height:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:"r1 r1"
+                        "r2 r3"
+}
+.r1{
+    grid-area:r1;
+    background-color: aquamarine;
+}
+.r2{
+    grid-area:r2;
+    background-color: blue;
+}
+.r3{
+    grid-area:r3;
+    background-color:gold;
+}
